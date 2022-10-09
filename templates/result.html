@@ -1,0 +1,41 @@
+
+{% extends "base.html" %}
+{% block container %}
+
+
+<div class="Dynamic_Img img-fluid" style="background-image: url(&quot;https://source.unsplash.com/900x900/?\&quot;nature-{{weather}}\&quot;&quot;);">
+      <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-lg-5 col-md-7 mx-auto my-auto">
+                <div class="card">
+                    <div class="card-body px-lg-5 py-lg-5 text-center">
+                        <p> <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg></span> <b>{{name}}<span>({{country}})</span></b> 
+
+                        </p>
+                        <p><i>{{weather}}</i></p>
+                        <h1> <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-sun" viewBox="0 0 16 16">
+                            <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585A1.5 1.5 0 0 1 5 12.5z"/>
+                            <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm4.243 1.757a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 1-.708-.708l.708-.707a.5.5 0 0 1 .707 0zM8 5.5a.5.5 0 0 1 .5-.5 3 3 0 1 1 0 6 .5.5 0 0 1 0-1 2 2 0 0 0 0-4 .5.5 0 0 1-.5-.5zM12.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 1 1 0 1h-1a.5.5 0 0 1-.5-.5zm-1.172 2.828a.5.5 0 0 1 .708 0l.707.708a.5.5 0 0 1-.707.707l-.708-.707a.5.5 0 0 1 0-.708zM8.5 12a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5z"/>
+                          </svg></span> {{temprature}}<sup>o</sup>C <span><img src="https://openweathermap.org/img/wn/{{icon}}@2x.png" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; border-radius:2rem; background-color:gray; width=" 70px";="" height="70px" ;"=""></span> </h1>
+                        
+                          <hr>
+                          <p><b>{{month}}  {{date}} {{day}}</b></p>
+                          <hr>
+                        <a href="/" type="button" class="btn btn-info">Back</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      </div>
+ 
+
+
+
+{% endblock  %}
+
+

@@ -1,0 +1,24 @@
+{% include "header.html" %}
+
+{% block container %}
+
+<div class="container my-5">
+    <form action="/" method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="Git_User_Name" class="form-label"><b>Weather details</b></label>
+            <input type="text" class="form-control" name="username" id="Git_User_Name" aria-describedby="emailHelp"
+                required>
+            <div id="Git_User_Name" class="form-text">Enter your city name ...</div>
+        </div>
+        <div class="d-grid gap-2">
+            <input type="submit" class="btn btn-primary" value="Search">
+
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}
+
+{% include "footer.html" %}
