@@ -1,0 +1,2 @@
+# Weather
+Django application
